@@ -1,10 +1,5 @@
 {
-  "buildCommand": "git lfs pull --include=\"*.mp4\" --exclude=\"\" && npm run build",
-  "installCommand": "git lfs install && npm install",
-  "framework": "nextjs",
-  "functions": {
-    "src/app/**/*.tsx": {
-      "maxDuration": 30
-    }
-  }
+  "buildCommand": "chmod +x scripts/setup-lfs.sh && ./scripts/setup-lfs.sh && npm run build",
+  "installCommand": "npm install",
+  "framework": "nextjs"
 } 
